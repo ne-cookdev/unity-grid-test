@@ -56,6 +56,10 @@ public class BuildingsGrid : MonoBehaviour
                     PlaceFlyingBuilding(x, y);
                 }
             }
+
+            if (Input.GetKey(KeyCode.Escape)){
+                Destroy(flyingBuilding.gameObject);
+            }
         }
     }
 
